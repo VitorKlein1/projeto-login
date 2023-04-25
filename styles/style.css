@@ -5,3 +5,101 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #5f2c92, rgb(42, 20, 65));
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+
+main {
+    margin: auto;
+    width: 340px;
+    position: absolute;
+    transform: translate(50%, 50%);
+}
+
+div#form {
+    border-radius: 0px 0px 15px 15px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 3px 3px black;  
+}
+
+div#image > img{
+    border-radius: 15px 15px 0px 0px;
+    width: 340px;
+    display: block;
+    margin: auto;
+    box-shadow: 3px 3px black;  
+}
+
+.loginInfo {
+    padding: 8px;
+    margin: 5px;
+    border: 2px solid #7638a0;
+    background-color: #4f256b;
+    border-radius: 5px;
+}
+
+#enter input{
+    width: 97.5%;
+    padding: 8px;
+    margin: 3px;
+    color: white;
+    font-size: 1.1em;
+}
+
+#enter input:hover {
+    background-color: #214949;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;;
+    background-color: #397c7b;
+    width: 70%;
+}
+
+h1 {
+    text-align: center;
+    margin: 7px;
+    margin-top: 1px;
+    padding: 8px;
+    font-size: 1.7em;
+}
+
+
+#welcome {
+    text-align: justify;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+#forgotPassword > input{
+    background-color: transparent;
+    width: 97.5%;
+    padding: 8px;
+    margin: 3px;
+    color: #5bc9c7;
+    font-size: 1.1em;
+    border-color: #5bc9c7;
+}
+
+#forgotPassword > input:hover {
+    background-color: #479c9b8c;
+}

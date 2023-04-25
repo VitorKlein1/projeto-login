@@ -6,23 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Materi+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="image">
-
+                <img src="images/Pexels - City (Essow).jpg" alt="Login image">
             </div>
             <div id="form">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <p id="welcome">Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
-                <form action="login.php" method="post">
-
+                <form action="forgot-password.html" method="post">
+                    <p class="loginInfo">
+                        <label for="iemail">Email:</label>
+                        <input type="email" name="email" id="iemail" placeholder="email" required maxlength="200" onclick="injetandoInfo()">
+                    </p>
+                    <p class="loginInfo"> 
+                        <label for="ipassword">Senha: </label>
+                        <input type="password" name="password" id="ipassword" placeholder="senha" required minlength="5" maxlength="100">
+                    </p>
+                    <p id="enter">
+                        <input type="submit" value="Entrar">
+                    </p>
+                    <p id="forgotPassword">
+                        <input type="submit" value="Esqueci a senha">
+                    </p>
                 </form>
             </div>
         </section>
     </main>
-</body>
 </html>
