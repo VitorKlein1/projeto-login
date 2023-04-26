@@ -3,17 +3,7 @@
 
 /*  TABLET  */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    main {
-        width: 600px;
-    }
-
-    div#image {
-        width: 600px;
-        height: 200px;
-        background-color: red;
-    }
 }
-
 
 
 

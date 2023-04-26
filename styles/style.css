@@ -9,25 +9,43 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to bottom, #5f2c92, #49a09d);
     background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative; 
+}
+
+
+main {
     height: 100vh;
     width: 100vw;
     position: relative;
 }
 
-
-main {
-    width: 340px;
+section#login {
     position: absolute;
-    transform: translate(25%, 25%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#image {
+    display: block;
+    background-image: url(../images/Pexels-City-Essow.jpg);
+    border-radius: 15px 15px 0px 0px;
+    height: 200px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);  
+    background-size: cover;
 }
 
 div#form {
+    display: block;
     border-radius: 0px 0px 15px 15px;
     background-color: rgb(29, 29, 29);
     color: white;
@@ -35,15 +53,7 @@ div#form {
     padding-bottom: 15px;
     padding-left: 8px;
     padding-right: 8px;
-    box-shadow: 3px 3px black;  
-}
-
-div#image > img{
-    border-radius: 15px 15px 0px 0px;
-    width: 340px;
-    display: block;
-    margin: auto;
-    box-shadow: 3px 3px black;  
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);
 }
 
 .loginInfo {
