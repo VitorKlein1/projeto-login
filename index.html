@@ -8,32 +8,45 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/mediaqueries.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="image">
-                <!--Imagem-->
+                <!--imagem-->
             </div>
+
             <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
+
                 <form action="forgot-password.html" method="post" autocomplete="on">
+
+                    <!--   .....EMAIL.....   -->
                     <div class="loginInfo">
                         <i class="material-icons">person</i>
                         <input type="email" name="email" id="iemail" placeholder="email" required maxlength="200" autocomplete="email">
                         <label for="iemail">Email</label>
                     </div>
+
+
+                    <!--   .....SENHA.....   -->
                     <div class="loginInfo"> 
                         <i class="material-icons">vpn_key</i>
                         <input type="password" name="password" id="ipassword" placeholder="senha" required minlength="5" maxlength="100" autocomplete="current-password">
                         <label for="ipassword">Senha</label>
                     </div>
+
+
+                    <!--   .....ENTRAR.....   -->
                     <div id="enter">
                         <input type="submit" value="Entrar">
                     </div>
+
+
+                    <!--   .....ESQUECI A SENHA.....   -->
                     <div id="forgotPassword">
                         <a href="forgot-password.html">Esqueci a senha<i class="material-icons">mail</i></a>
                     </div>
