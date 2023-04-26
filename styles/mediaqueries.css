@@ -17,7 +17,7 @@ BREAKPOINTS
 @media screen and (min-width: 768px) and (max-width: 992px) {
     section#login {
         width: 80vw;
-        height: 40vw;
+        height: 360px;
     }
 
 
