@@ -6,34 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Materi+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/mediaqueries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="image">
+                <!--Imagem-->
             </div>
             <div id="form">
                 <h1>Login</h1>
-                <p id="welcome">Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
-                <form action="forgot-password.html" method="post">
-                    <p class="loginInfo">
-                        <label for="iemail">Email:</label>
-                        <input type="email" name="email" id="iemail" placeholder="email" required maxlength="200" onclick="injetandoInfo()">
-                    </p>
-                    <p class="loginInfo"> 
-                        <label for="ipassword">Senha: </label>
-                        <input type="password" name="password" id="ipassword" placeholder="senha" required minlength="5" maxlength="100">
-                    </p>
-                    <p id="enter">
+                <form action="forgot-password.html" method="post" autocomplete="on">
+                    <div class="loginInfo">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="email" id="iemail" placeholder="email" required maxlength="200" autocomplete="email">
+                        <label for="iemail">Email</label>
+                    </div>
+                    <div class="loginInfo"> 
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="password" id="ipassword" placeholder="senha" required minlength="5" maxlength="100" autocomplete="current-password">
+                        <label for="ipassword">Senha</label>
+                    </div>
+                    <div id="enter">
                         <input type="submit" value="Entrar">
-                    </p>
-                    <p id="forgotPassword">
-                        <input type="submit" value="Esqueci a senha">
-                    </p>
+                    </div>
+                    <div id="forgotPassword">
+                        <a href="forgot-password.html">Esqueci a senha<i class="material-icons">mail</i></a>
+                    </div>
                 </form>
             </div>
         </section>
