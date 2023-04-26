@@ -1,2 +1,31 @@
 @charset "UTF-8";
 
+
+/*  TABLET  */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        width: 600px;
+    }
+
+    div#image {
+        width: 600px;
+        height: 200px;
+        background-color: red;
+    }
+}
+
+
+
+
+/*  DESKTOP  */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+
+
+
+/*  TV  */
+@media screen and (min-width: 1200px) {
+
+}
