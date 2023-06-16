@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page e E-commerce</title>
+    <style>
+        /* Estilos para a página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Estilos para o e-commerce */
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .product h2 {
+            margin-top: 0;
+        }
+
+        .product p {
+            margin-bottom: 0;
+        }
+
+        .product button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cart {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .cart h2 {
+            margin-top: 0;
+        }
+
+        .cart p {
+            margin-bottom: 0;
+        }
+
+        .cart ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .cart li {
+            margin-bottom: 10px;
+        }
+
+        .contact-links {
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Landing Page e E-commerce</h1>
+
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Price: $10</p>
+            <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $20</p>
+            <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+        </div>
+
+        <div class="cart">
+            <h2>Cart</h2>
+            <p>Total: $<span id="total">0</span></p>
+            <ul id="cartItems"></ul>
+        </div>
+
+        <div class="contact-links">
+            <a href="mailto:info@example.com">E-mail</a>
+            <a href="tel:+1234567890">Telefone</a>
+            <a href="https://www.example.com">Website</a>
+        </div>
+    </div>
+
+    <script>
+        // Variáveis para o carrinho de compras
+        var cartItems = [];
+        var total = 0;
